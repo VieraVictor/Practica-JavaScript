@@ -6,66 +6,68 @@
   </head>
   <body>
     <script type="text/javascript">
+    'use strict';
+
       function saludos() {
         console.log("Buen Día!");
       }
 
       saludos();
-    </script>
 
-    <script type="text/javascript">
+
+
       function saludar(texto) {
         console.log(texto);
       }
 
       saludar("Hola!");
-    </script>
 
-    <script type="text/javascript">
+
+
         var saludo = function(texto){
           console.log(texto);
         };
 
         saludo("Hola! :)");
-      </script>
 
-      <script type="text/javascript">
+
+
         var suma = function(num1, num2){
           var resultado = num1 + num2;
           console.log("El resultado de la suma es: " + resultado);
         }
 
         suma(50,29);
-      </script>
 
-      <script type="text/javascript">
+
+
         function resta(num1, num2) {
           var resultado = num1 - num2;
           console.log("El resultado de la resta es: " + resultado);
         }
 
         resta(18, 2);
-      </script>
 
-      <script type="text/javascript">
+
+
         function multi(num1, num2) {
           var resultado = num1 * num2;
           console.log("El resultado de la multiplicación es: " + resultado);
         }
 
         multi(2,4);
-      </script>
 
-      <script type="text/javascript">
+
+
         function divi(num1, num2) {
           var resultado = num1 / num2;
           console.log("El resultado de la división es: " + resultado);
         }
 
         divi(2,4);
-      </script>
 
-      <script type="text/javascript">
+
+
         function division(num1, num2) {
           if (num2 == 0) {
             console.log("No se puede dividir por cero");
@@ -78,9 +80,9 @@
 
         division(20,0);
         division(40,2);
-      </script>
 
-      <script type="text/javascript">
+
+
       function division(num1, num2) {
 
         var mensaje;
@@ -103,9 +105,9 @@
 
       alert(division(30, 3));
       console.log(division(50, 2));
-      </script>
 
-      <script type="text/javascript">
+
+
       function suma(num1, num2) {
         var resultado = num1 + num2;
 
@@ -120,10 +122,8 @@
 
       console.log(resultadoDeLaSegundaSuma);
 
-      </script>
 
-      <script type="text/javascript">
-        'use strict';
+
 
         function suma(){
           var resultado = 0;
@@ -176,7 +176,19 @@
         }
 
         console.log("El resultado de la división es: " + divi(2,0));
-      </script>
 
+
+
+        var respuesta = confirm("¿Ya tiene cuenta?");
+
+        if (respuesta) {
+          alert("Por favor ingrese su cuenta");
+        }
+        else {
+          alert("Por favor cree una nueva cuenta");
+        }
+
+        
+      </script>
   </body>
 </html>
