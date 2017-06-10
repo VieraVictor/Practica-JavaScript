@@ -228,7 +228,7 @@
 
 
 
-        var animales = ["Perro", "Gato", "Ratón", "Loro", "Aguila", 45873, "Ballena", "Tiburón", "Oso"]
+        var animales = ["Perro", "Gato", "Ratón", "Loro", "Aguila", 45873, "Ballena", "Tiburón", "Oso"];
 
         for (var i = 0; i < animales.length; i++) {
 
@@ -238,11 +238,36 @@
           if (typeof(animales[i]) != "string") {
             console.log("Se encontro un elemento que no es un string en la posición " + i)
           }
-
-
-
         }
 
+
+
+        var animales = ["Perro", "Gato", "Ratón", "Loro", "Aguila", 45873, "Ballena", "Tiburón", "Oso"];
+
+        for (var i = 0; i < animales.length; i++) {
+
+          if (! (i%2) ) {
+
+            console.log(animales[i])
+          }
+        }
+
+
+
+        var continentes = ["Asia", "America", "Europa", "-", "Oceanía", "-", "Africa", "Antártida"];
+
+        var contador = 0;
+
+        for (var i = 0; i < continentes.length; i++) {
+
+          if (continentes[i] == "-") {
+              continentes[i] = "valor vacio";
+              contador = contador + 1;
+          }
+        }
+
+        console.log(continentes);
+        console.log(contador);
       </script>
   </body>
 </html>
