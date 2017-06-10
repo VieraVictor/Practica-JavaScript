@@ -188,7 +188,61 @@
           alert("Por favor cree una nueva cuenta");
         }
 
-        
+
+
+        /* Si una palabra se encuentra en el texto con index.Of() y arroja mayor a 1 esta y si es -1 no existe */
+        var animal = "Habia una vez una vaca en la quebrada de Humahuaca";
+
+        var posicion = animal.indexOf("vaca loca");
+
+        console.log(posicion);
+
+
+        function encontrarU(texto){
+          if (texto.indexOf("u") != -1) {
+
+            console.log("El texto tiene U" + texto.indexOf("U"))
+          }
+          else {
+            console.log("El texto no tiene U")
+          }
+        }
+
+        var cadenaDeCaracteres = "Miameeeuu";
+        encontrarU(cadenaDeCaracteres);
+
+
+        function encontrarLetra(texto,letra){
+          if (texto.indexOf("u") != -1) {
+
+            console.log("El texto tiene una " + letra + " en la posición " + texto.indexOf(letra))
+          }
+          else {
+            console.log("El texto no tiene " + letra + "s")
+          }
+        }
+
+        var cadenaDeCaracteres = "chuchuhuaaa chuchuhuaaa";
+        encontrarLetra(cadenaDeCaracteres, "h");
+
+
+
+
+        var animales = ["Perro", "Gato", "Ratón", "Loro", "Aguila", 45873, "Ballena", "Tiburón", "Oso"]
+
+        for (var i = 0; i < animales.length; i++) {
+
+        console.log(animales[i]);
+        console.log(typeof(animales[i])); /*typeof() sirve para ver el tipo de dato ingrsado - != significa diferencia*/
+
+          if (typeof(animales[i]) != "string") {
+            console.log("Se encontro un elemento que no es un string en la posición " + i)
+          }
+
+
+
+        }
+
       </script>
   </body>
 </html>
