@@ -91,6 +91,7 @@
           return mensaje;
 
         }
+
         else{
           var resultado = num1 / num2;
           mensaje = "El resultado de la division " + num1 + " por " + num2 + " es: " + resultado;
@@ -119,6 +120,22 @@
 
       console.log(resultadoDeLaSegundaSuma);
 
+      </script>
+
+      <script type="text/javascript">
+        'use strict';
+
+        function suma(){
+          var resultado = 0;
+
+          for (var i = 0; i < arguments.length; i++) {
+            resultado += arguments[i];
+          }
+
+          return resultado;
+        }
+
+        console.log("El resultado de la suma es: " + suma(20, 30, 40, 50, 70));
       </script>
   </body>
 </html>
