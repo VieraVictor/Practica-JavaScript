@@ -129,13 +129,38 @@
           var resultado = 0;
 
           for (var i = 0; i < arguments.length; i++) {
-            resultado += arguments[i];
+            resultado = resultado + arguments[i];
           }
 
           return resultado;
         }
 
         console.log("El resultado de la suma es: " + suma(20, 30, 40, 50, 70));
+
+        function resta(){
+          var resultado = 0;
+
+          for (var i = 0; i < arguments.length; i++) {
+             resultado = resultado - arguments[i];
+          }
+
+          return resultado;
+        }
+
+        console.log("El resultao de la resta es: " + resta(2,10,6,50));
+
+        function multi(){
+          var resultado = arguments[0];
+
+          for (var i = 1; i < arguments.length; i++) {
+          resultado = resultado * arguments[i];
+          }
+
+          return resultado;
+        }
+
+        console.log("El resultado de la mutiplicación es: " + multi(2,4,7,8));
       </script>
+
   </body>
 </html>
