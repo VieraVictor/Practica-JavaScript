@@ -138,16 +138,16 @@
         console.log("El resultado de la suma es: " + suma(20, 30, 40, 50, 70));
 
         function resta(){
-          var resultado = 0;
+          var resultado = arguments[0];
 
-          for (var i = 0; i < arguments.length; i++) {
+          for (var i = 1; i < arguments.length; i++) {
              resultado = resultado - arguments[i];
           }
 
           return resultado;
         }
 
-        console.log("El resultao de la resta es: " + resta(2,10,6,50));
+        console.log("El resultao de la resta es: " + resta(50,34,20));
 
         function multi(){
           var resultado = arguments[0];
@@ -160,6 +160,22 @@
         }
 
         console.log("El resultado de la mutiplicación es: " + multi(2,4,7,8));
+
+        function divi(){
+          var resultado = arguments[0];
+
+          for (var i = 1; i < arguments.length; i++) {
+            if (arguments[i] == 0) {
+              return "No se puede dividir por cero";
+            }
+            else{
+              resultado = resultado / arguments[i];
+            }
+          }
+          return resultado;
+        }
+
+        console.log("El resultado de la división es: " + divi(2,0));
       </script>
 
   </body>
