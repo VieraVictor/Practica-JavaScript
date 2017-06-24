@@ -63,15 +63,59 @@
         getApellido: function(){
 
           console.log(this.apellido);
-        }
+        },
 
        setNombre: function(valorNuevo){
          this.nombre = valorNuevo
        }
       }
 
-      
 
+      /*Ejercicio N°11:
+
+      # Hacer un objeto que represente un Auto
+      ​
+      - Debera tener las propiedades color, modelo, patente, marca, prendido, velocidad y velocidad maxima
+      - Debera tener los metodos encender, acelerar, mostrar velocidad actual, frenar y apagar
+      - Por lo tanto mediante el metodo acelerar tendra que ir aumentando la propiedad velocidad hasta llegar
+        a la velocidad maxima. */
+
+      var auto = {
+        marca: "Audi",
+        modelo: "TT",
+        color: "Azul",
+        patente: "AAA 123",
+        velocidad: 0,
+        velocidadMaxima: 250,
+        prendido: false,
+        arrancar: function () {
+
+		if (!this.prendido) {
+			this.prendido = true;
+		} else {
+			console.log('Ya esta prendido maestro...')
+		}
+
+	},
+	apagar: function () {
+
+		if (this.prendido) {
+			this.prendido = false;
+			this.velocidad = 0;
+		} else {
+			console.log('Que quere apagar...')
+		}
+	},
+	acelarar: function () {
+
+		if( this.velocidad < this.velocidadMaxima ) {
+			this.velocidad = this.velocidad + 20;
+		} else {
+			console.log('Ya estas en la velocidad maxima.')
+		}
+
+	}
+}
 
     </script>
   </body>
