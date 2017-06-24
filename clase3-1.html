@@ -7,7 +7,29 @@
   <body>
     <script type="text/javascript">
 
+      var animal = {
+        tipo: "Gato",
+        color: "Verde"
+      }
 
+    console.log(animal);
+
+
+      var paises = {
+        argentina : ["Buenos Aires", "Tucumán", "Salta", "Chubut"],
+        brasil : ["Rio de Janeiro", "Brasilia", "San Pablo", "Buzios"],
+        uruguay : ["Montevideo", "Canelones", "Colonia", "Rocha"],
+      }
+
+      for (key in paises){
+
+        console.log(key);
+        console.log(paises[key]);
+
+        for (var i = 0; i < paises[key].length; i++) {
+         console.log("-" + paises[key][i])
+        }
+      }
 
     </script>
   </body>
