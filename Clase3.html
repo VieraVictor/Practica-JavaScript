@@ -68,6 +68,44 @@
 	                         }
 
                          }
+
+               var empresas = ['Nintendo','Google','Microsoft','Apple','Samsung','Sony'];
+               var empresasDeRopa = ['Levis','Kevingston','UMA','Puma','ELVIS']
+
+               function eliminarCompetencia (arrayDeEmpresas, empresaLider) {
+
+               	//Array de atras para adelante
+               	for (var i = arrayDeEmpresas.length - 1; i >= 0 ; i--) {
+
+               		console.log(i);
+               		console.log(arrayDeEmpresas[i]);
+
+               		if( arrayDeEmpresas[i] !== empresaLider ) {
+
+               			arrayDeEmpresas.pop();
+
+               		} else {
+               			break
+               		}
+
+               	}
+
+               	console.log(arrayDeEmpresas);
+
+               }
+
+               eliminarCompetencia(empresas, 'Apple');
+
+              console.log("HOLA");
+
+              var humorBueno = confirm("Esta usted de bueno humor?");
+
+              if (humorBueno) {
+                console.log("Que suerte....")
+              }
+              else {
+                console.log("Entonces no me hables...")
+              }
     </script>
   </body>
 </html>
