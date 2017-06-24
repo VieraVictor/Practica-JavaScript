@@ -106,6 +106,75 @@
               else {
                 console.log("Entonces no me hables...")
               }
+
+
+ var alumnos = [];
+
+  function agregarAlumnos() {
+
+    var consulta = true;
+
+    while(consulta === true){
+
+      var nombre = prompt("Ingrese un Alumno");
+
+      alumnos.push(nombre);
+
+      consulta = confirm("¿Desea agregar mas Alumnos?");
+    }
+  }
+
+  agregarAlumnos();
+  console.log(alumnos);
+
+  /*
+
+EJERCICIO N°9
+"Realizar una funcion que tome un array como parametro
+y muestre por pantalla la cantidad de elementos tipo number,
+la cantidad de elementos tipo string y la cantidad de elementos tipo boolean.
+Luego llamar a la funcion con 3 arrays distintos."
+
+*/
+
+var array1 = [true, 'Hola', 24534, 25, 35,'Roberto',false, true];
+var array2 = [true, 'Hola'];
+var array3 = [35,'Roberto',false, true];
+
+
+function revisarTipo(arrayARecorrer) {
+
+	var contadorString = 0;
+	var contadorBooleanos = 0;
+	var contadorNumeros = 0;
+
+	for (var i = 0; i < arrayARecorrer.length; i++) {
+
+		if ( typeof(arrayARecorrer[i]) === 'string' ){
+
+			contadorString++
+			//contadorString = contadorString + 1;
+
+		} else if ( typeof(arrayARecorrer[i]) === 'boolean' ) {
+
+			contadorBooleanos++
+
+		} else if (typeof(arrayARecorrer[i]) === 'number' ) {
+			contadorNumeros++
+		};
+
+	}
+
+	console.log('La cantidad de Numeros que tiene el array es de ' + contadorNumeros );
+	console.log('La cantidad de strings que tiene el array es de ' + contadorString );
+	console.log('La cantidad de Boleanos que tiene el array es de ' + contadorBooleanos );
+	console.log('////////' );
+
+}
+
+revisarTipo(array1);
+revisarTipo(array2);
+revisarTipo(array3);
     </script>
   </body>
 </html>
