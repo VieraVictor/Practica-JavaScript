@@ -41,6 +41,33 @@
 
         console.log(auxiliar);
         console.log(equiposFutbol);
+
+
+        //"Dados los siguientes arrays, indicar por pantalla si tienen algún elemento en común "
+
+
+
+        var apellidos = ["Gonzalez","Pérez","Blanco","Espósito","Martínez"];
+        var colores = ["Azul","Verde","Amarillo","Blanco","Naranja"];
+
+
+          for (var i = 0; i < apellidos.length; i++) {
+
+	             for (var j = 0; j < colores.length; j++) {
+
+		               console.log('COMPARANDO: ' +apellidos[i] + ' con ' + colores[j] )
+
+		                if(apellidos[i] === colores[j] ){
+
+			                   console.log('OH POR DIOS, HAY 2 ELEMENTOS IGUALES!!!');
+			                   console.log('El Sr. o Sra. ' + apellidos[i] + 'tiene apellido de color '+ colores[j] )
+
+		                        }
+
+
+	                         }
+
+                         }
     </script>
   </body>
 </html>
