@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Clase3 (Métodos de String y arrays, Patrones)</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+    var superheroes = ["Batman", "Superman", "Mujer Maravilla", "Maquina de Guerra",];
+
+    // Agrego elementos al array.
+    superheroes.push("Iron Man");
+    // Elimino el último elemento del array.
+
+    var eliminado = superheroes.pop();
+
+    console.log(superheroes);
+    console.log("El Superhéroe eliminado es: " + eliminado);
+
+    // Sacar el primer elemento del array.
+
+    var equiposFutbol = ["Boca", "River", "Racing", "Independiente", "San Lorenzo", "Huracan"];
+
+    var auxiliar = [];
+    var largoInicial = equiposFutbol.length;
+
+    for(var i = 0; i < largoInicial; i++) {
+
+        var eliminado = equiposFutbol.pop();
+        auxiliar.push(eliminado);
+      }
+
+      auxiliar.pop();
+
+      largoInicial = auxiliar.length;
+
+      for(var i = 0; i < largoInicial; i++) {
+          eliminado = auxiliar.pop();
+          equiposFutbol.push(eliminado);
+        }
+
+        console.log(auxiliar);
+        console.log(equiposFutbol);
+    </script>
+  </body>
+</html>
